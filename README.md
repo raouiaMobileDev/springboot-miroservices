@@ -1,49 +1,28 @@
-﻿Microservices Architecture with Spring Boot, Spring Cloud, and Docker
+🧩 # Microservices Architecture with Spring Boot, Spring Cloud & Docker
 📌 Project Overview
 
-This project demonstrates the design and implementation of a scalable microservices-based system using Spring Boot, Spring Cloud, and Docker. The objective is to transform a traditional monolithic approach into a distributed architecture where services are independently developed, deployed, and managed.
+This project demonstrates how to build a scalable microservices-based system using Spring Boot, Spring Cloud, and Docker.
 
-The system follows modern cloud-native development practices including service discovery, centralized configuration, inter-service communication, and containerization.
+The goal is to migrate from a monolithic architecture to a distributed, cloud-native architecture where services are:
 
-🧱 Architecture
+Independently developed
 
-The application is composed of multiple independent microservices that communicate through REST APIs. Each service is responsible for a specific business capability and runs in its own container.
+Independently deployed
 
-Main architectural components include:
+Loosely coupled
 
-API Gateway – Single entry point for all client requests
+Easily scalable
 
-Service Registry (Eureka) – Dynamic service discovery
+The project applies modern microservices patterns such as service discovery, centralized configuration, API gateway routing, and containerization.
 
-Config Server – Centralized configuration management
+🏗️ System Architecture
 
-Business Microservices – Independent services (e.g., User, Department, Order, etc.)
+The system consists of multiple independent microservices communicating through REST APIs.
 
-Docker – Containerization and environment consistency
-
-🚀 Technologies Used
-Technology	Purpose
-Spring Boot	Rapid development of microservices
-Spring Cloud	Microservices infrastructure (Eureka, Config, Gateway)
+Core Components
+Component	Description
+API Gateway	Single entry point for all client requests
 Eureka Server	Service discovery and registration
-Spring Cloud Gateway	API Gateway and request routing
-Spring Cloud Config	Centralized configuration
-REST APIs	Communication between services
-Docker	Containerization and deployment
-Maven	Dependency management and build tool
-⚙️ Features
-
-Microservices-based architecture
-
-Independent deployment of services
-
-Centralized configuration management
-
-Dynamic service registration and discovery
-
-API Gateway for routing and filtering
-
-RESTful inter-service communication
-
-Dockerized services for portability
-
+Config Server	Centralized configuration management
+Business Microservices	Domain-specific services (User, Department, etc.)
+Docker	Containerization platform
